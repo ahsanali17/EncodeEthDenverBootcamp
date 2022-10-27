@@ -1,0 +1,1 @@
+The entire Encode Bootcamp homework will be contained within this repo.
