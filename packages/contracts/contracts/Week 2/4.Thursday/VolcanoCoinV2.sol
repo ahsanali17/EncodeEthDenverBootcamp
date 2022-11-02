@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-// Homework 7
-contract VolcanoCoin is Ownable {
+// Homework 8
+contract VolcanoCoinV2 is Ownable {
 
     struct Payment {
         uint256 transferAmount;
@@ -32,7 +32,7 @@ contract VolcanoCoin is Ownable {
         emit totalSupplyChanged(totalSupply);
     }
 
-    function transfer(uint amount, address toRecipient) public {
+    function transfer(uint amount, address toRecipient) external {
         require(msg.sender.balance >= amount);
         balances[msg.sender] -= amount;
         balances[toRecipient] += amount; 
