@@ -1,0 +1,1 @@
+export const VolcanoCoinAddress = "0x8d650ce81B5730A04A38Df1473d69766111fF876";
